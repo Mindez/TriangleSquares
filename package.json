@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/Mindez/TriangleSquares#readme",
   "dependencies": {
-    "chai": "^3.5.0"
+    "big-number": "^0.4.0",
+    "chai": "^3.5.0",
+    "js-big-integer": "^1.0.2"
   }
 }

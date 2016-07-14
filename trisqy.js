@@ -13,13 +13,13 @@ var trisqy = {
         var finished = false,
             numMatches = 0,
             square = {
-                before : BigNumber(startSquare),
-                after  : this._getSquare(BigNumber(startSquare)),
+                before : new BigNumber(startSquare),
+                after  : this._getSquare(new BigNumber(startSquare)),
                 func   : this._getSquare
             },
             triangle = {
-                before : BigNumber(startTriangle),
-                after  : this._getTriangle(BigNumber(startTriangle)),
+                before : new BigNumber(startTriangle),
+                after  : this._getTriangle(new BigNumber(startTriangle)),
                 func   : this._getTriangle
             };
 
@@ -43,7 +43,7 @@ var trisqy = {
     },
 
     _getTriangle : function(x) {
-        var orig = BigNumber(x.toString());
+        var orig = new BigNumber(x.toString());
         return (x.multiply(x).add(orig).divide(2));
     },
 
@@ -53,7 +53,7 @@ var trisqy = {
 
     _increment : function(obj) {
         obj.before.plus(1);
-        var after = BigNumber(obj.before.toString());
+        var after = new BigNumber(obj.before.toString());
         obj.after = obj.func(after);
     },
 

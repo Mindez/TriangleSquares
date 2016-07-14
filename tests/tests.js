@@ -9,7 +9,7 @@ describe('Basic Maths Tests', function() {
     it('should correctly calculate the first 5 triangle numbers', function() {
         var result = [];
         for (var i = 0; i < 5; i++) {
-            result.push(trisqy._getTriangle(BigNumber(i+1)).toString());
+            result.push(trisqy._getTriangle(new BigNumber(i+1)).toString());
         }
         expect(result).to.eql(['1', '3', '6', '10', '15']);
     });
@@ -17,27 +17,27 @@ describe('Basic Maths Tests', function() {
     it('should correctly calculate the first 5 square numbers', function() {
         var result = [];
         for (var i = 0; i < 5; i++) {
-            result.push(trisqy._getSquare(BigNumber(i+1)).toString());
+            result.push(trisqy._getSquare(new BigNumber(i+1)).toString());
         }
         expect(result).to.eql(['1', '4', '9', '16', '25']);
     });
 
     it('should return 0 for the zeroth triangle number', function() {
-        var result = trisqy._getTriangle(BigNumber(0));
-        expect(result).to.eql(BigNumber(0));
+        var result = trisqy._getTriangle(new BigNumber(0));
+        expect(result).to.eql(new BigNumber(0));
     });
 
     it('should return 0 for the zeroth square number', function() {
-        var result = trisqy._getSquare(BigNumber(0));
-        expect(result).to.eql(BigNumber(0));
+        var result = trisqy._getSquare(new BigNumber(0));
+        expect(result).to.eql(new BigNumber(0));
     });
 });
 
 describe('Increment Tests', function() {
     it('should increment triangular numbers correctly', function() {
         var triangle = {
-            before : BigNumber(1),
-            after  : trisqy._getTriangle(BigNumber(1)),
+            before : new BigNumber(1),
+            after  : trisqy._getTriangle(new BigNumber(1)),
             func   : trisqy._getTriangle
         };
         trisqy._increment(triangle);
@@ -47,8 +47,8 @@ describe('Increment Tests', function() {
 
     it('should increment square numbers correctly', function() {
         var square = {
-            before : BigNumber(1),
-            after  : trisqy._getSquare(BigNumber(1)),
+            before : new BigNumber(1),
+            after  : trisqy._getSquare(new BigNumber(1)),
             func   : trisqy._getSquare
         };
         trisqy._increment(square);

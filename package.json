@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Mindez/TriangleSquares/issues"
   },
-  "homepage": "https://github.com/Mindez/TriangleSquares#readme"
+  "homepage": "https://github.com/Mindez/TriangleSquares#readme",
+  "dependencies": {
+    "chai": "^3.5.0"
+  }
 }

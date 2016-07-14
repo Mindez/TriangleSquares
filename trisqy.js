@@ -1,6 +1,7 @@
 'use strict';
 
-var BigNumber = require('big-number');
+var BigNumber = require('big-number'),
+    moment    = require('moment');
 
 var trisqy = {
     start : function(options) {
@@ -57,7 +58,8 @@ var trisqy = {
     },
 
     _output : function(obj) {
-        console.log('Match found! ' + obj.triangle.after.toString() +
+        console.log(moment().format('DD-MM-YYYY-HH:mm:ss.SSS') + ' - ' +
+            'Match found! ' + obj.triangle.after.toString() +
             ' = tri(' + obj.triangle.before.toString() + ')' +
             ' = sqr(' + obj.square.before.toString() + ')' +
             ' = ' + obj.square.after.toString());

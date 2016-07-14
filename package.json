@@ -1,0 +1,27 @@
+{
+  "name": "trisqy",
+  "version": "1.0.0",
+  "description": "Outputs all triangle numbers that are also square numbers",
+  "main": "trisqy.js",
+  "scripts": {
+    "test": "mocha tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mindez/TriangleSquares.git"
+  },
+  "keywords": [
+    "maths",
+    "math",
+    "triangle",
+    "square",
+    "numberphile",
+    "standupmaths"
+  ],
+  "author": "Mindez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mindez/TriangleSquares/issues"
+  },
+  "homepage": "https://github.com/Mindez/TriangleSquares#readme"
+}

@@ -82,13 +82,4 @@
   "worker"        : false,    // Web Workers
   "wsh"           : false,    // Windows Scripting Host
   "yui"           : false,    // Yahoo User Interface
-
-  // Custom Globals
-  "globals"       : {                 // additional predefined global variables
-    "define": true,
-    "require": true,
-    "ko": true,
-    "tdAdmin": false,
-    "mocha": true
-  }
 }

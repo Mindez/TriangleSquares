@@ -4,11 +4,12 @@
   "description": "Outputs all triangle numbers that are also square numbers",
   "main": "trisqy.js",
   "scripts": {
-    "test": "mocha tests/*"
+    "test": "npx mocha tests/*",
+    "lint": "npx jshint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mindez/TriangleSquares.git"
+    "url": "git+https://github.com/Mindez/Trisqy.git"
   },
   "keywords": [
     "maths",
@@ -21,12 +22,16 @@
   "author": "Mindez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mindez/TriangleSquares/issues"
+    "url": "https://github.com/Mindez/Trisqy/issues"
   },
-  "homepage": "https://github.com/Mindez/TriangleSquares#readme",
+  "homepage": "https://github.com/Mindez/Trisqy#readme",
   "dependencies": {
     "big-number": "^0.4.0",
     "chai": "^3.5.0",
     "moment": "^2.14.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.13.0",
+    "mocha": "^9.0.0"
   }
 }

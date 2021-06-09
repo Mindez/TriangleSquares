@@ -1,16 +1,22 @@
 # Trisqy
-A program to output numbers that are both triangle numbers and square numbers.
 
-It's pronounced `trisky`.
+Trisqy (pronounced 'trisky') is a small nodejs program to output numbers that are both triangle numbers and square numbers in linear time.
 
-Can be run with `node run` - edit run.js if you want to change options
+Note that this was not designed to be efficient, and as such it uses a naive algorithm. Do not try to use this program to calculate huge square triangular numbers.
 
-Can be tested with `mocha tests/*` or `npm test`
+## Getting Started
 
-Can be linted with `jshint .`
+Install with `npm i`
+Run with `node run`
+Test with `npm test`
+Lint with `npm lint`
 
 # Options
 
-Pass `startSquare` and `startTriangle` to start() in run.js to start from a particular square or triangle base
+If you want to play around with the parameters, you can edit the options object passed in to `trisqy.start` in `run.js`.
 
-Pass `toReturn` to start() in run.js to return a limited number of matches
+This object accepts the following parameters:-
+- `startSquare` - Start from a specified square base (default: 1)
+- `startTriangle` - Start from a specified triangle base (default: 1)
+- `toReturn` - Specify a number of results to return before stopping (default: no limit
+)

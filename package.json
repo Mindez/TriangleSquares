@@ -4,6 +4,7 @@
   "description": "Outputs all triangle numbers that are also square numbers",
   "main": "trisqy.js",
   "scripts": {
+    "start": "node run",
     "test": "npx mocha tests/*",
     "lint": "npx jshint ."
   },

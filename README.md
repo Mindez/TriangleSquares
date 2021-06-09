@@ -7,9 +7,9 @@ Note that this was not designed to be efficient, and as such it uses a naive alg
 ## Getting Started
 
 Install with `npm i`
-Run with `node run`
+Run with `npm start`
 Test with `npm test`
-Lint with `npm lint`
+Lint with `npm run lint`
 
 # Options
 
